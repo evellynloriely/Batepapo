@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login para a pagina 'menudeacesso'</title>
+</head>
+<body>
+  <div class="custom-login-container">
+    <h2 class="custom-login-title">Login</h2>
+    <form action="/entrar.html" method="post">
+      <label for="custom-username">Usuário:</label>
+      <input type="text" id="custom-username" name="username" required>
+
+      <label for="custom-password">Senha:</label>
+      <input type="password" id="custom-password" name="password" required>
+
+      <button type="submit" class="custom-login-button">Entrar</button>
+    </form>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffcc80; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .custom-login-container {
+      background-color: #ffffff; 
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .custom-login-title {
+      color: #ff5722; 
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    .custom-login-button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .custom-login-button:hover {
+      background-color: #45a049; 
+    }
+  </style>
+</body>
+</html>
